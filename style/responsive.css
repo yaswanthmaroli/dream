@@ -1,0 +1,532 @@
+:root{
+
+  /* color */
+  --primary-Color:#FFD600;
+  --secondary-Color:#2D0160;
+  --tertiary-Color:#FF6525;
+  --white-color:#fff;
+
+  /* fontsize */
+
+  
+
+  /* Fontweight */
+
+  --fontweight-regular:500;
+  --fontweight-semibold:600;
+  --fontweight-bold:700;
+
+}
+
+
+
+
+
+@media (max-width:800px){
+
+
+/*--header*/
+
+header{
+  z-index: 6;
+}
+
+header .toggle-btn img{
+  display: block;
+  z-index: 2;
+}
+
+header .navbar .navlinks{
+  flex-direction: column;
+ position: absolute;
+  z-index: 5;
+
+ background-color: var(--primary-Color);
+ position: absolute;
+ left: 0;
+ right: 0;
+ top: 100%;
+display: flex;
+align-items: center;
+ transform: translateX(-100%);
+ transition: transform 1s ease;
+ padding: 10%;
+ opacity: 0;
+ width: 50%;
+ height: auto;
+ justify-content: center;
+ overflow: hidden;
+}
+
+header .navlinks.active{
+   transform: translateX(0%);
+  opacity: 1; 
+  }
+
+  header .navlinks.active  .active-list{
+      color: var(--white-color);
+  }
+
+
+  /*--------------------------
+  banner-section
+  ----------------------*/
+
+  .banner{
+      height: auto;
+  }
+
+  .banner .main-section{
+      flex-direction: column;
+      padding-top: 30%;
+      
+    }
+
+   
+     .banner .left-section .online-learning-text{
+      font-size: 0.7rem;
+      line-height: 0.5rem;
+    }
+  
+    .banner .left-section h1{
+     font-size:1.5rem;
+     padding-top: 0.5rem;
+     line-height: 1.5rem;
+     
+    }
+  
+    .banner .left-section .user-text{
+      font-size: 0.7rem;
+     line-height: 0.5rem;
+      padding-top: 1rem;
+    }
+  
+    .banner .left-section .search-bar{
+      max-width: 80%;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      gap:1.5rem;
+      padding: 0.5rem;
+     
+      
+  }
+
+  
+    .banner .left-section .category{
+     font-size: 0.5rem;
+    }
+  
+    .banner .left-section .category img{
+      position: absolute;
+      top: 1rem;
+      left: 3.6rem;
+      z-index: 1;
+    }
+    
+  
+    .banner .left-section .category p {
+      padding: 15px 20px;
+     font-size: 0.5rem;
+    }
+  
+    .banner .left-section a .search-icon{
+       padding: 10px 12px;
+       background-color:var(--primary-Color);
+       border-radius: 100%;
+    }
+
+    .banner .left-section .rating{
+      
+      padding-top: 1.5rem;
+     
+    }
+
+    .banner .left-section .rating img{
+       width: 6rem;
+       
+    }
+
+    
+     .banner .left-section .rating-text img{
+      width: 10rem;
+    }
+
+    .banner .left-section  .rating-text{
+     
+      padding-top: 1rem;
+      
+  }
+
+  .banner .right-section{
+      flex-direction: column;
+      flex-wrap: wrap;
+       
+     }
+
+     .banner .right-section .right-section-1{
+       width: 100%;
+       height: 70vh;
+     
+       margin-top: 1.5rem;
+      
+      
+       
+      
+     }
+   
+     .banner .right-section .right-section-2{
+      width: 100%;
+      height:55vh;
+      margin-top: 1.5rem;
+     
+     
+      
+     }
+      .advertisement{
+   
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .advertisement img{
+      width: 3rem;
+    }
+
+    /* slider */
+
+    .slider{
+      padding: 10%;
+    }
+
+    .course-details h1{
+      font-size: 1rem;
+      color: var(--primary-Color);
+      padding-bottom:0.7rem ;
+     }
+  
+     .course-details p{
+      font-size:0.5rem;
+     
+     }
+
+     .course-name:after{
+     
+      display: none;
+     }
+
+     .course-name{
+      
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+     }
+
+     .course-name p:after{
+     
+      display: none;
+     }
+
+     .hover-cards .col-1{
+     
+      flex-direction: column;
+     }
+
+     .hover-cards .col-2{
+      flex-direction: column;
+     }
+
+     .main-group .group-img{
+      width: 80%;
+     }
+
+     .main-group h1{
+      font-size: 1.2rem;
+     }
+
+     .main-group p{
+      font-size: 0.7rem;
+     }
+     
+     .main-group .left-group .group-img-overlay{
+     
+      width:6rem;
+      height:3rem;
+     
+     
+    }
+
+    .main-group{
+  
+      gap: 1rem;
+      }
+
+}
+
+
+
+
+@media (max-width:355px){
+
+  /*-----------------header-section
+  -----------------------*/
+  header .logo img{
+      max-width: 4rem;
+     }
+
+     header .login{
+     gap: 0.5rem;
+     font-size: var(--font-size-12);
+    }
+
+    header .login .signup-btn{
+      padding: 5px 12px;
+     
+    }
+
+    header .toggle-btn img{
+     width: 1rem;
+     
+    }
+
+    
+    /*---------------------------
+    banner-section
+    --------------------------*/
+
+    .banner .left-section .online-learning-text{
+      font-size: 0.5rem;
+      line-height: 0.4rem;
+    }
+  
+    .banner .left-section h1{
+     font-size:1rem;
+     padding-top: 0.5rem;
+     line-height: 1rem;
+     
+    }
+  
+    .banner .left-section .user-text{
+      font-size: 0.5rem;
+     line-height: 0.6rem;
+      padding-top: 0.8rem;
+    }
+  
+    .banner .left-section .search-bar{
+      
+     
+      
+  }
+
+  
+    .banner .left-section .category{
+     font-size: 0.5rem;
+    }
+  
+    
+    .banner .left-section .category p {
+      padding: 15px 20px;
+     font-size: 0.5rem;
+    }
+  
+    .banner .right-section .right-section-1{
+      
+       display: none;
+       margin-left: 0rem;
+       height: 100vh;
+    }
+  
+    .banner .right-section .right-section-2{
+      height: 100vh;
+      margin-left: 0rem;
+      display: none;
+    
+     
+    }
+
+    .banner .right-section .box{
+     
+      display: none;
+    }
+  
+    .banner .right-section .box-2{
+     
+     width: 2rem;
+     height: 5rem;
+     left: 90%;
+    }
+
+
+     .advertisement img{
+      width: 2rem;
+      max-width: 30rem;
+      margin: auto;
+    }
+
+
+    .banner .right-section .right-section-2::after{
+     
+      width: 2rem;
+      height: 4rem;
+      
+      
+    }
+   
+    .course-details{
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    .course-detail::after{
+      display: none;
+     }
+  
+     .main-group .left-group .group-img-overlay{
+    
+      width:4rem;
+      height: 2rem;
+      top: 30%;
+      left: 20%;
+     
+    }
+
+    .main-group .left-group .group-img-overlay p{
+      font-size: 0.4rem;
+      
+    }
+    
+  
+    
+  
+  
+    
+
+   
+
+    
+}
+
+
+@media (min-width:800px) and (max-width:1450px){
+
+
+  .banner .left-section .search-bar{
+      
+  }
+
+  .banner .right-section{
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .banner .right-section .right-section-1{
+      width: 100%;
+      height: 50vh;
+      
+      
+     
+     
+      
+     
+    }
+  
+    .banner .right-section .right-section-2{
+     width: 100%;
+     height:40vh;
+     margin-top: 1.5rem;
+    
+    
+     
+    }
+
+     .advertisement img{
+      width: 4rem;
+      max-width: 40rem;
+      margin: auto;
+    }
+
+    .banner .right-section .right-section-1{
+  
+      background: url('../images/women-1.svg'), url('../images/yellow\ circle.svg') left bottom ;
+      background-repeat: no-repeat;
+     
+    }
+   
+  
+   
+  
+}
+
+
+@media(max-width:1200px){
+.hover-cards .col-1{
+ 
+  flex-direction: column;
+ }
+
+ .hover-cards .col-2{
+  flex-direction: column;
+ }
+
+ .career{
+ flex-direction: column;
+ align-items: center;
+ }
+
+ .main-group{
+ 
+  flex-direction: column;
+}
+
+}
+
+@media (max-width:400px){
+
+
+
+ .hover-card{
+  width: 17rem;
+
+ }
+
+}
+
+
+@media (max-width:300px){
+  
+
+  .hover-card{
+    width: 10rem;
+ 
+   }
+
+   
+  .hover-cards .nichole{
+    width: 4rem;
+   }
+
+   .hover-cards .star{
+    width: 3rem;
+   }
+
+   .hover-cards .timer{
+    width: 3rem;
+   }
+
+   .hover-cards .lessons{
+    width: 2rem;
+   }
+
+   .hover-cards .dollar{
+    width: 2rem;
+   }
+   .hover-cards .hover-text{
+  
+    
+    font-size: 0.4rem;
+   }
+
+   
+}
+
+
